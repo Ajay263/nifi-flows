@@ -70226,7 +70226,7 @@
         "penaltyDuration" : "30 sec",
         "position" : {
           "x" : -8.0,
-          "y" : -320.0
+          "y" : -312.0
         },
         "properties" : {
           "Routing Strategy" : "Route to Property name",
@@ -85834,6 +85834,6 @@
   "snapshotMetadata" : {
     "author" : "admin",
     "flowIdentifier" : "Vodacom",
-    "timestamp" : 1772018587554
+    "timestamp" : 1772021507801
   }
 }
