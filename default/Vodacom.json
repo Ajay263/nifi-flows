@@ -83664,6 +83664,34 @@
       "remoteProcessGroups" : [ ],
       "scheduledState" : "ENABLED",
       "statelessFlowTimeout" : "1 min"
+    }, {
+      "comments" : "",
+      "componentType" : "PROCESS_GROUP",
+      "connections" : [ ],
+      "controllerServices" : [ ],
+      "defaultBackPressureDataSizeThreshold" : "1 GB",
+      "defaultBackPressureObjectThreshold" : 10000,
+      "defaultFlowFileExpiration" : "0 sec",
+      "executionEngine" : "INHERITED",
+      "flowFileConcurrency" : "UNBOUNDED",
+      "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+      "funnels" : [ ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "9c900c14-7572-3141-b78e-e7887b47525b",
+      "inputPorts" : [ ],
+      "labels" : [ ],
+      "maxConcurrentTasks" : 1,
+      "name" : "sample",
+      "outputPorts" : [ ],
+      "position" : {
+        "x" : 1854.0889318841032,
+        "y" : 1285.59454496762
+      },
+      "processGroups" : [ ],
+      "processors" : [ ],
+      "remoteProcessGroups" : [ ],
+      "scheduledState" : "ENABLED",
+      "statelessFlowTimeout" : "1 min"
     } ],
     "processors" : [ ],
     "remoteProcessGroups" : [ ],
@@ -83677,6 +83705,6 @@
   "snapshotMetadata" : {
     "author" : "admin",
     "flowIdentifier" : "Vodacom",
-    "timestamp" : 1772013723787
+    "timestamp" : 1772014041508
   }
 }
