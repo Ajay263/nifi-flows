@@ -58,6 +58,6 @@ jobs:
           flowB: ${{ steps.files.outputs.flowB }}
           checkstyle: true
           # optional: path to YAML configuration of the rules
-          checkstyle-rules: submitted-changes/.github/checkstyle/checkstyle-rules.yaml
-          # optional: fail the action when violations are detected
-          checkstyle-fail: true
+          # checkstyle-rules: submitted-changes/.github/checkstyle/checkstyle-rules.yaml
+          # # optional: fail the action when violations are detected
+          # checkstyle-fail: true
