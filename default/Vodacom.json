@@ -1,26 +1,5 @@
 {
-  "externalControllerServices" : {
-    "c9233a65-44ae-3e25-b081-b56d0db711cf" : {
-      "identifier" : "c9233a65-44ae-3e25-b081-b56d0db711cf",
-      "name" : "AWSCredentialsProviderControllerService"
-    },
-    "62ee41ec-4569-3f58-8d88-eee68b5b380f" : {
-      "identifier" : "62ee41ec-4569-3f58-8d88-eee68b5b380f",
-      "name" : "FetchS3_AWSCredentialsProviderControllerService"
-    },
-    "2b4c4963-5bb9-35b1-8e9b-f3564f313d2d" : {
-      "identifier" : "2b4c4963-5bb9-35b1-8e9b-f3564f313d2d",
-      "name" : "JsonTreeReader"
-    },
-    "b8c78429-5a93-3faf-9191-61b859260cea" : {
-      "identifier" : "b8c78429-5a93-3faf-9191-61b859260cea",
-      "name" : "Kafka3ConnectionService"
-    },
-    "c6858edb-69e8-3644-b70e-8e6cec327137" : {
-      "identifier" : "c6858edb-69e8-3644-b70e-8e6cec327137",
-      "name" : "JsonRecordSetWriter"
-    }
-  },
+  "externalControllerServices" : { },
   "flow" : {
     "createdTimestamp" : 1772002714657,
     "description" : "",
@@ -38,28 +17,7 @@
     "defaultBackPressureObjectThreshold" : 10000,
     "defaultFlowFileExpiration" : "0 sec",
     "executionEngine" : "INHERITED",
-    "externalControllerServiceReferences" : {
-      "c9233a65-44ae-3e25-b081-b56d0db711cf" : {
-        "identifier" : "c9233a65-44ae-3e25-b081-b56d0db711cf",
-        "name" : "AWSCredentialsProviderControllerService"
-      },
-      "62ee41ec-4569-3f58-8d88-eee68b5b380f" : {
-        "identifier" : "62ee41ec-4569-3f58-8d88-eee68b5b380f",
-        "name" : "FetchS3_AWSCredentialsProviderControllerService"
-      },
-      "2b4c4963-5bb9-35b1-8e9b-f3564f313d2d" : {
-        "identifier" : "2b4c4963-5bb9-35b1-8e9b-f3564f313d2d",
-        "name" : "JsonTreeReader"
-      },
-      "b8c78429-5a93-3faf-9191-61b859260cea" : {
-        "identifier" : "b8c78429-5a93-3faf-9191-61b859260cea",
-        "name" : "Kafka3ConnectionService"
-      },
-      "c6858edb-69e8-3644-b70e-8e6cec327137" : {
-        "identifier" : "c6858edb-69e8-3644-b70e-8e6cec327137",
-        "name" : "JsonRecordSetWriter"
-      }
-    },
+    "externalControllerServiceReferences" : { },
     "flowFileConcurrency" : "UNBOUNDED",
     "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
     "funnels" : [ ],
@@ -2872,13 +2830,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -3039,6 +2990,13 @@
             "name" : "et-initial-listing-target",
             "sensitive" : false
           },
+          "Delimiter" : {
+            "displayName" : "Delimiter",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Delimiter",
+            "sensitive" : false
+          },
           "proxy-configuration-service" : {
             "displayName" : "Proxy Configuration Service",
             "dynamic" : false,
@@ -3081,48 +3039,6 @@
             "name" : "Prefix",
             "sensitive" : false
           },
-          "Signer Override" : {
-            "displayName" : "Signer Override",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Signer Override",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Use Versions" : {
-            "displayName" : "Use Versions",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Use Versions",
-            "sensitive" : false
-          },
-          "Requester Pays" : {
-            "displayName" : "Requester Pays",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Requester Pays",
-            "sensitive" : false
-          },
-          "Delimiter" : {
-            "displayName" : "Delimiter",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Delimiter",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Write Object Tags" : {
             "displayName" : "Write Object Tags",
             "dynamic" : false,
@@ -3155,6 +3071,13 @@
             "name" : "SSL Context Service",
             "sensitive" : false
           },
+          "Signer Override" : {
+            "displayName" : "Signer Override",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Signer Override",
+            "sensitive" : false
+          },
           "Bucket" : {
             "displayName" : "Bucket",
             "dynamic" : false,
@@ -3174,6 +3097,13 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Region",
+            "sensitive" : false
+          },
+          "Record Writer" : {
+            "displayName" : "Record Writer",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "Record Writer",
             "sensitive" : false
           },
           "Custom Signer Class Name" : {
@@ -3202,6 +3132,20 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Write User Metadata",
+            "sensitive" : false
+          },
+          "Use Versions" : {
+            "displayName" : "Use Versions",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Use Versions",
+            "sensitive" : false
+          },
+          "Requester Pays" : {
+            "displayName" : "Requester Pays",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Requester Pays",
             "sensitive" : false
           }
         },
@@ -3488,13 +3432,6 @@
             "dynamic" : false,
             "identifiesControllerService" : true,
             "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
             "sensitive" : false
           },
           "/EXPIRY_DATE" : {
@@ -3800,13 +3737,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -3964,13 +3894,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
             "sensitive" : false
           },
           "Custom Signer Module Location" : {
@@ -5196,7 +5119,7 @@
           "Publish Strategy" : "USE_VALUE",
           "Failure Strategy" : "Route to Failure",
           "partitioner.class" : "org.apache.kafka.clients.producer.internals.DefaultPartitioner",
-          "Record Writer" : "c6858edb-69e8-3644-b70e-8e6cec327137",
+          "Record Writer" : "6f74d393-d841-343b-8ff1-2edb17a39a1c",
           "Transactions Enabled" : "true"
         },
         "propertyDescriptors" : {
@@ -5226,13 +5149,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Kafka Key Attribute Encoding",
-            "sensitive" : false
-          },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
             "sensitive" : false
           },
           "Record Metadata Strategy" : {
@@ -5282,13 +5198,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partition",
-            "sensitive" : false
-          },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
             "sensitive" : false
           },
           "Publish Strategy" : {
@@ -5382,7 +5291,7 @@
         "properties" : {
           "dbf-default-precision" : "10",
           "records" : "SELECT COUNT(*) AS record_count FROM FLOWFILE",
-          "record-writer" : "c6858edb-69e8-3644-b70e-8e6cec327137",
+          "record-writer" : "6f74d393-d841-343b-8ff1-2edb17a39a1c",
           "record-reader" : "2b4c4963-5bb9-35b1-8e9b-f3564f313d2d",
           "include-zero-record-flowfiles" : "true",
           "dbf-default-scale" : "0"
@@ -5407,13 +5316,6 @@
             "dynamic" : false,
             "identifiesControllerService" : true,
             "name" : "record-writer",
-            "sensitive" : false
-          },
-          "record-reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-reader",
             "sensitive" : false
           },
           "include-zero-record-flowfiles" : {
@@ -5908,13 +5810,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
             "sensitive" : false
           },
           "Multipart Threshold" : {
@@ -6708,13 +6603,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -6762,13 +6650,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partition",
-            "sensitive" : false
-          },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
             "sensitive" : false
           },
           "Publish Strategy" : {
@@ -6861,7 +6742,7 @@
         },
         "properties" : {
           "Include Zero Record FlowFiles" : "true",
-          "Record Writer" : "c6858edb-69e8-3644-b70e-8e6cec327137",
+          "Record Writer" : "6f74d393-d841-343b-8ff1-2edb17a39a1c",
           "Record Reader" : "87628da2-20a6-350c-8803-d1db2187a77e"
         },
         "propertyDescriptors" : {
@@ -9046,6 +8927,13 @@
             "name" : "et-initial-listing-target",
             "sensitive" : false
           },
+          "Delimiter" : {
+            "displayName" : "Delimiter",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Delimiter",
+            "sensitive" : false
+          },
           "proxy-configuration-service" : {
             "displayName" : "Proxy Configuration Service",
             "dynamic" : false,
@@ -9088,48 +8976,6 @@
             "name" : "Prefix",
             "sensitive" : false
           },
-          "Signer Override" : {
-            "displayName" : "Signer Override",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Signer Override",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Use Versions" : {
-            "displayName" : "Use Versions",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Use Versions",
-            "sensitive" : false
-          },
-          "Requester Pays" : {
-            "displayName" : "Requester Pays",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Requester Pays",
-            "sensitive" : false
-          },
-          "Delimiter" : {
-            "displayName" : "Delimiter",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Delimiter",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Write Object Tags" : {
             "displayName" : "Write Object Tags",
             "dynamic" : false,
@@ -9162,6 +9008,13 @@
             "name" : "SSL Context Service",
             "sensitive" : false
           },
+          "Signer Override" : {
+            "displayName" : "Signer Override",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Signer Override",
+            "sensitive" : false
+          },
           "Bucket" : {
             "displayName" : "Bucket",
             "dynamic" : false,
@@ -9181,6 +9034,13 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Region",
+            "sensitive" : false
+          },
+          "Record Writer" : {
+            "displayName" : "Record Writer",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "Record Writer",
             "sensitive" : false
           },
           "Custom Signer Class Name" : {
@@ -9209,6 +9069,20 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Write User Metadata",
+            "sensitive" : false
+          },
+          "Use Versions" : {
+            "displayName" : "Use Versions",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Use Versions",
+            "sensitive" : false
+          },
+          "Requester Pays" : {
+            "displayName" : "Requester Pays",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Requester Pays",
             "sensitive" : false
           }
         },
@@ -9423,13 +9297,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
             "sensitive" : false
           },
           "Multipart Threshold" : {
@@ -9671,13 +9538,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -9727,13 +9587,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -9760,13 +9613,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -9845,20 +9691,6 @@
             "dynamic" : true,
             "identifiesControllerService" : false,
             "name" : "orig",
-            "sensitive" : false
-          },
-          "record-writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-writer",
-            "sensitive" : false
-          },
-          "record-reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-reader",
             "sensitive" : false
           },
           "include-zero-record-flowfiles" : {
@@ -9966,13 +9798,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -10022,13 +9847,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -10055,13 +9873,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -10212,20 +10023,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Script Body",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
             "sensitive" : false
           },
           "Module Directory" : {
@@ -12120,20 +11917,6 @@
             "name" : "records",
             "sensitive" : false
           },
-          "record-writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-writer",
-            "sensitive" : false
-          },
-          "record-reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-reader",
-            "sensitive" : false
-          },
           "include-zero-record-flowfiles" : {
             "displayName" : "Include Zero Record FlowFiles",
             "dynamic" : false,
@@ -12225,13 +12008,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -12281,13 +12057,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -12314,13 +12083,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -12406,13 +12168,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
             "sensitive" : false
           },
           "Custom Signer Module Location" : {
@@ -13117,13 +12872,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -13690,13 +13438,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -13746,13 +13487,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -13779,13 +13513,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -14177,13 +13904,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
             "sensitive" : false
           },
           "Multipart Threshold" : {
@@ -15779,6 +15499,13 @@
               "name" : "et-initial-listing-target",
               "sensitive" : false
             },
+            "Delimiter" : {
+              "displayName" : "Delimiter",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Delimiter",
+              "sensitive" : false
+            },
             "proxy-configuration-service" : {
               "displayName" : "Proxy Configuration Service",
               "dynamic" : false,
@@ -15821,48 +15548,6 @@
               "name" : "Prefix",
               "sensitive" : false
             },
-            "Signer Override" : {
-              "displayName" : "Signer Override",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Signer Override",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Use Versions" : {
-              "displayName" : "Use Versions",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Use Versions",
-              "sensitive" : false
-            },
-            "Requester Pays" : {
-              "displayName" : "Requester Pays",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Requester Pays",
-              "sensitive" : false
-            },
-            "Delimiter" : {
-              "displayName" : "Delimiter",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Delimiter",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Write Object Tags" : {
               "displayName" : "Write Object Tags",
               "dynamic" : false,
@@ -15895,6 +15580,13 @@
               "name" : "SSL Context Service",
               "sensitive" : false
             },
+            "Signer Override" : {
+              "displayName" : "Signer Override",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Signer Override",
+              "sensitive" : false
+            },
             "Bucket" : {
               "displayName" : "Bucket",
               "dynamic" : false,
@@ -15914,6 +15606,13 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Region",
+              "sensitive" : false
+            },
+            "Record Writer" : {
+              "displayName" : "Record Writer",
+              "dynamic" : false,
+              "identifiesControllerService" : true,
+              "name" : "Record Writer",
               "sensitive" : false
             },
             "Custom Signer Class Name" : {
@@ -15942,6 +15641,20 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Write User Metadata",
+              "sensitive" : false
+            },
+            "Use Versions" : {
+              "displayName" : "Use Versions",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Use Versions",
+              "sensitive" : false
+            },
+            "Requester Pays" : {
+              "displayName" : "Requester Pays",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Requester Pays",
               "sensitive" : false
             }
           },
@@ -16158,13 +15871,6 @@
               "name" : "Object Key",
               "sensitive" : false
             },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Multipart Threshold" : {
               "displayName" : "Multipart Threshold",
               "dynamic" : false,
@@ -16324,20 +16030,6 @@
               "name" : "Script Body",
               "sensitive" : false
             },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Module Directory" : {
               "displayName" : "Module Directory",
               "dynamic" : false,
@@ -16426,13 +16118,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -16482,13 +16167,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -16515,13 +16193,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -16757,13 +16428,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -17324,13 +16988,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -17380,13 +17037,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -17413,13 +17063,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -17754,20 +17397,6 @@
               "dynamic" : true,
               "identifiesControllerService" : false,
               "name" : "records",
-              "sensitive" : false
-            },
-            "record-writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-writer",
-              "sensitive" : false
-            },
-            "record-reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-reader",
               "sensitive" : false
             },
             "include-zero-record-flowfiles" : {
@@ -18843,13 +18472,6 @@
               "name" : "Object Key",
               "sensitive" : false
             },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Multipart Threshold" : {
               "displayName" : "Multipart Threshold",
               "dynamic" : false,
@@ -19524,13 +19146,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Custom Signer Module Location" : {
@@ -21327,6 +20942,13 @@
               "name" : "et-initial-listing-target",
               "sensitive" : false
             },
+            "Delimiter" : {
+              "displayName" : "Delimiter",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Delimiter",
+              "sensitive" : false
+            },
             "proxy-configuration-service" : {
               "displayName" : "Proxy Configuration Service",
               "dynamic" : false,
@@ -21369,48 +20991,6 @@
               "name" : "Prefix",
               "sensitive" : false
             },
-            "Signer Override" : {
-              "displayName" : "Signer Override",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Signer Override",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Use Versions" : {
-              "displayName" : "Use Versions",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Use Versions",
-              "sensitive" : false
-            },
-            "Requester Pays" : {
-              "displayName" : "Requester Pays",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Requester Pays",
-              "sensitive" : false
-            },
-            "Delimiter" : {
-              "displayName" : "Delimiter",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Delimiter",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Write Object Tags" : {
               "displayName" : "Write Object Tags",
               "dynamic" : false,
@@ -21443,6 +21023,13 @@
               "name" : "SSL Context Service",
               "sensitive" : false
             },
+            "Signer Override" : {
+              "displayName" : "Signer Override",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Signer Override",
+              "sensitive" : false
+            },
             "Bucket" : {
               "displayName" : "Bucket",
               "dynamic" : false,
@@ -21462,6 +21049,13 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Region",
+              "sensitive" : false
+            },
+            "Record Writer" : {
+              "displayName" : "Record Writer",
+              "dynamic" : false,
+              "identifiesControllerService" : true,
+              "name" : "Record Writer",
               "sensitive" : false
             },
             "Custom Signer Class Name" : {
@@ -21490,6 +21084,20 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Write User Metadata",
+              "sensitive" : false
+            },
+            "Use Versions" : {
+              "displayName" : "Use Versions",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Use Versions",
+              "sensitive" : false
+            },
+            "Requester Pays" : {
+              "displayName" : "Requester Pays",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Requester Pays",
               "sensitive" : false
             }
           },
@@ -21685,13 +21293,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -21741,13 +21342,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -21774,13 +21368,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -22172,13 +21759,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -22740,13 +22320,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -23540,13 +23113,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -23596,13 +23162,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -23629,13 +23188,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -23841,20 +23393,6 @@
               "dynamic" : true,
               "identifiesControllerService" : false,
               "name" : "records",
-              "sensitive" : false
-            },
-            "record-writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-writer",
-              "sensitive" : false
-            },
-            "record-reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-reader",
               "sensitive" : false
             },
             "include-zero-record-flowfiles" : {
@@ -24797,13 +24335,6 @@
               "name" : "Object Key",
               "sensitive" : false
             },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Multipart Threshold" : {
               "displayName" : "Multipart Threshold",
               "dynamic" : false,
@@ -24963,20 +24494,6 @@
               "name" : "Script Body",
               "sensitive" : false
             },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Module Directory" : {
               "displayName" : "Module Directory",
               "dynamic" : false,
@@ -25117,13 +24634,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Custom Signer Module Location" : {
@@ -26958,6 +26468,13 @@
               "name" : "et-initial-listing-target",
               "sensitive" : false
             },
+            "Delimiter" : {
+              "displayName" : "Delimiter",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Delimiter",
+              "sensitive" : false
+            },
             "proxy-configuration-service" : {
               "displayName" : "Proxy Configuration Service",
               "dynamic" : false,
@@ -27000,48 +26517,6 @@
               "name" : "Prefix",
               "sensitive" : false
             },
-            "Signer Override" : {
-              "displayName" : "Signer Override",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Signer Override",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Use Versions" : {
-              "displayName" : "Use Versions",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Use Versions",
-              "sensitive" : false
-            },
-            "Requester Pays" : {
-              "displayName" : "Requester Pays",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Requester Pays",
-              "sensitive" : false
-            },
-            "Delimiter" : {
-              "displayName" : "Delimiter",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Delimiter",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Write Object Tags" : {
               "displayName" : "Write Object Tags",
               "dynamic" : false,
@@ -27074,6 +26549,13 @@
               "name" : "SSL Context Service",
               "sensitive" : false
             },
+            "Signer Override" : {
+              "displayName" : "Signer Override",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Signer Override",
+              "sensitive" : false
+            },
             "Bucket" : {
               "displayName" : "Bucket",
               "dynamic" : false,
@@ -27093,6 +26575,13 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Region",
+              "sensitive" : false
+            },
+            "Record Writer" : {
+              "displayName" : "Record Writer",
+              "dynamic" : false,
+              "identifiesControllerService" : true,
+              "name" : "Record Writer",
               "sensitive" : false
             },
             "Custom Signer Class Name" : {
@@ -27121,6 +26610,20 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Write User Metadata",
+              "sensitive" : false
+            },
+            "Use Versions" : {
+              "displayName" : "Use Versions",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Use Versions",
+              "sensitive" : false
+            },
+            "Requester Pays" : {
+              "displayName" : "Requester Pays",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Requester Pays",
               "sensitive" : false
             }
           },
@@ -27200,13 +26703,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -27256,13 +26752,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -27289,13 +26778,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -27381,20 +26863,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Script Body",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
               "sensitive" : false
             },
             "Module Directory" : {
@@ -27620,13 +27088,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -28188,13 +27649,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -29490,20 +28944,6 @@
               "name" : "records",
               "sensitive" : false
             },
-            "record-writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-writer",
-              "sensitive" : false
-            },
-            "record-reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-reader",
-              "sensitive" : false
-            },
             "include-zero-record-flowfiles" : {
               "displayName" : "Include Zero Record FlowFiles",
               "dynamic" : false,
@@ -29595,13 +29035,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -29651,13 +29084,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -29684,13 +29110,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -30158,13 +29577,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Custom Signer Module Location" : {
@@ -30801,13 +30213,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -32430,13 +31835,6 @@
               "name" : "Object Key",
               "sensitive" : false
             },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Custom Signer Module Location" : {
               "displayName" : "Custom Signer Module Location",
               "dynamic" : false,
@@ -32953,6 +32351,13 @@
               "name" : "et-initial-listing-target",
               "sensitive" : false
             },
+            "Delimiter" : {
+              "displayName" : "Delimiter",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Delimiter",
+              "sensitive" : false
+            },
             "proxy-configuration-service" : {
               "displayName" : "Proxy Configuration Service",
               "dynamic" : false,
@@ -32995,48 +32400,6 @@
               "name" : "Prefix",
               "sensitive" : false
             },
-            "Signer Override" : {
-              "displayName" : "Signer Override",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Signer Override",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Use Versions" : {
-              "displayName" : "Use Versions",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Use Versions",
-              "sensitive" : false
-            },
-            "Requester Pays" : {
-              "displayName" : "Requester Pays",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Requester Pays",
-              "sensitive" : false
-            },
-            "Delimiter" : {
-              "displayName" : "Delimiter",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Delimiter",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Write Object Tags" : {
               "displayName" : "Write Object Tags",
               "dynamic" : false,
@@ -33069,6 +32432,13 @@
               "name" : "SSL Context Service",
               "sensitive" : false
             },
+            "Signer Override" : {
+              "displayName" : "Signer Override",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Signer Override",
+              "sensitive" : false
+            },
             "Bucket" : {
               "displayName" : "Bucket",
               "dynamic" : false,
@@ -33088,6 +32458,13 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Region",
+              "sensitive" : false
+            },
+            "Record Writer" : {
+              "displayName" : "Record Writer",
+              "dynamic" : false,
+              "identifiesControllerService" : true,
+              "name" : "Record Writer",
               "sensitive" : false
             },
             "Custom Signer Class Name" : {
@@ -33116,6 +32493,20 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Write User Metadata",
+              "sensitive" : false
+            },
+            "Use Versions" : {
+              "displayName" : "Use Versions",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Use Versions",
+              "sensitive" : false
+            },
+            "Requester Pays" : {
+              "displayName" : "Requester Pays",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Requester Pays",
               "sensitive" : false
             }
           },
@@ -33907,13 +33298,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -33963,13 +33347,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -33996,13 +33373,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -34079,20 +33449,6 @@
               "dynamic" : true,
               "identifiesControllerService" : false,
               "name" : "records",
-              "sensitive" : false
-            },
-            "record-writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-writer",
-              "sensitive" : false
-            },
-            "record-reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-reader",
               "sensitive" : false
             },
             "include-zero-record-flowfiles" : {
@@ -35115,13 +34471,6 @@
               "name" : "Object Key",
               "sensitive" : false
             },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Multipart Threshold" : {
               "displayName" : "Multipart Threshold",
               "dynamic" : false,
@@ -35639,13 +34988,6 @@
               "name" : "Object Key",
               "sensitive" : false
             },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Multipart Threshold" : {
               "displayName" : "Multipart Threshold",
               "dynamic" : false,
@@ -35856,20 +35198,6 @@
               "name" : "Script Body",
               "sensitive" : false
             },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Module Directory" : {
               "displayName" : "Module Directory",
               "dynamic" : false,
@@ -35958,13 +35286,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -36014,13 +35335,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -36047,13 +35361,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -36289,13 +35596,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -38111,6 +37411,13 @@
               "name" : "et-initial-listing-target",
               "sensitive" : false
             },
+            "Delimiter" : {
+              "displayName" : "Delimiter",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Delimiter",
+              "sensitive" : false
+            },
             "proxy-configuration-service" : {
               "displayName" : "Proxy Configuration Service",
               "dynamic" : false,
@@ -38153,48 +37460,6 @@
               "name" : "Prefix",
               "sensitive" : false
             },
-            "Signer Override" : {
-              "displayName" : "Signer Override",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Signer Override",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Use Versions" : {
-              "displayName" : "Use Versions",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Use Versions",
-              "sensitive" : false
-            },
-            "Requester Pays" : {
-              "displayName" : "Requester Pays",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Requester Pays",
-              "sensitive" : false
-            },
-            "Delimiter" : {
-              "displayName" : "Delimiter",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Delimiter",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Write Object Tags" : {
               "displayName" : "Write Object Tags",
               "dynamic" : false,
@@ -38227,6 +37492,13 @@
               "name" : "SSL Context Service",
               "sensitive" : false
             },
+            "Signer Override" : {
+              "displayName" : "Signer Override",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Signer Override",
+              "sensitive" : false
+            },
             "Bucket" : {
               "displayName" : "Bucket",
               "dynamic" : false,
@@ -38246,6 +37518,13 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Region",
+              "sensitive" : false
+            },
+            "Record Writer" : {
+              "displayName" : "Record Writer",
+              "dynamic" : false,
+              "identifiesControllerService" : true,
+              "name" : "Record Writer",
               "sensitive" : false
             },
             "Custom Signer Class Name" : {
@@ -38274,6 +37553,20 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Write User Metadata",
+              "sensitive" : false
+            },
+            "Use Versions" : {
+              "displayName" : "Use Versions",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Use Versions",
+              "sensitive" : false
+            },
+            "Requester Pays" : {
+              "displayName" : "Requester Pays",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Requester Pays",
               "sensitive" : false
             }
           },
@@ -38488,13 +37781,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -39161,13 +38447,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -39961,13 +39240,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -40017,13 +39289,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -40050,13 +39315,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -40262,20 +39520,6 @@
               "dynamic" : true,
               "identifiesControllerService" : false,
               "name" : "records",
-              "sensitive" : false
-            },
-            "record-writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-writer",
-              "sensitive" : false
-            },
-            "record-reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-reader",
               "sensitive" : false
             },
             "include-zero-record-flowfiles" : {
@@ -41135,20 +40379,6 @@
               "name" : "Script Body",
               "sensitive" : false
             },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Module Directory" : {
               "displayName" : "Module Directory",
               "dynamic" : false,
@@ -41237,13 +40467,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -41293,13 +40516,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -41326,13 +40542,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -41418,13 +40627,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Custom Signer Module Location" : {
@@ -41727,13 +40929,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -43436,13 +42631,6 @@
               "name" : "Object Key",
               "sensitive" : false
             },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Custom Signer Module Location" : {
               "displayName" : "Custom Signer Module Location",
               "dynamic" : false,
@@ -43646,20 +42834,6 @@
               "name" : "Script Body",
               "sensitive" : false
             },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Module Directory" : {
               "displayName" : "Module Directory",
               "dynamic" : false,
@@ -43736,6 +42910,13 @@
               "name" : "et-initial-listing-target",
               "sensitive" : false
             },
+            "Delimiter" : {
+              "displayName" : "Delimiter",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Delimiter",
+              "sensitive" : false
+            },
             "proxy-configuration-service" : {
               "displayName" : "Proxy Configuration Service",
               "dynamic" : false,
@@ -43778,48 +42959,6 @@
               "name" : "Prefix",
               "sensitive" : false
             },
-            "Signer Override" : {
-              "displayName" : "Signer Override",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Signer Override",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
-              "sensitive" : false
-            },
-            "Use Versions" : {
-              "displayName" : "Use Versions",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Use Versions",
-              "sensitive" : false
-            },
-            "Requester Pays" : {
-              "displayName" : "Requester Pays",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Requester Pays",
-              "sensitive" : false
-            },
-            "Delimiter" : {
-              "displayName" : "Delimiter",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Delimiter",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
-              "sensitive" : false
-            },
             "Write Object Tags" : {
               "displayName" : "Write Object Tags",
               "dynamic" : false,
@@ -43852,6 +42991,13 @@
               "name" : "SSL Context Service",
               "sensitive" : false
             },
+            "Signer Override" : {
+              "displayName" : "Signer Override",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Signer Override",
+              "sensitive" : false
+            },
             "Bucket" : {
               "displayName" : "Bucket",
               "dynamic" : false,
@@ -43871,6 +43017,13 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Region",
+              "sensitive" : false
+            },
+            "Record Writer" : {
+              "displayName" : "Record Writer",
+              "dynamic" : false,
+              "identifiesControllerService" : true,
+              "name" : "Record Writer",
               "sensitive" : false
             },
             "Custom Signer Class Name" : {
@@ -43899,6 +43052,20 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Write User Metadata",
+              "sensitive" : false
+            },
+            "Use Versions" : {
+              "displayName" : "Use Versions",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Use Versions",
+              "sensitive" : false
+            },
+            "Requester Pays" : {
+              "displayName" : "Requester Pays",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Requester Pays",
               "sensitive" : false
             }
           },
@@ -44113,13 +43280,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -44864,13 +44024,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -46483,20 +45636,6 @@
               "name" : "records",
               "sensitive" : false
             },
-            "record-writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-writer",
-              "sensitive" : false
-            },
-            "record-reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "record-reader",
-              "sensitive" : false
-            },
             "include-zero-record-flowfiles" : {
               "displayName" : "Include Zero Record FlowFiles",
               "dynamic" : false,
@@ -46588,13 +45727,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -46644,13 +45776,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -46677,13 +45802,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -46994,13 +46112,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "Object Key",
-              "sensitive" : false
-            },
-            "AWS Credentials Provider service" : {
-              "displayName" : "AWS Credentials Provider service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "AWS Credentials Provider service",
               "sensitive" : false
             },
             "Multipart Threshold" : {
@@ -47391,13 +46502,6 @@
               "name" : "Kafka Key Attribute Encoding",
               "sensitive" : false
             },
-            "Record Reader" : {
-              "displayName" : "Record Reader",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Reader",
-              "sensitive" : false
-            },
             "Record Metadata Strategy" : {
               "displayName" : "Record Metadata Strategy",
               "dynamic" : false,
@@ -47447,13 +46551,6 @@
               "name" : "partition",
               "sensitive" : false
             },
-            "Kafka Connection Service" : {
-              "displayName" : "Kafka Connection Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Kafka Connection Service",
-              "sensitive" : false
-            },
             "Publish Strategy" : {
               "displayName" : "Publish Strategy",
               "dynamic" : false,
@@ -47480,13 +46577,6 @@
               "dynamic" : false,
               "identifiesControllerService" : false,
               "name" : "partitioner.class",
-              "sensitive" : false
-            },
-            "Record Writer" : {
-              "displayName" : "Record Writer",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "Record Writer",
               "sensitive" : false
             },
             "Transactions Enabled" : {
@@ -49732,13 +48822,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -49788,13 +48871,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -49821,13 +48897,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -50256,13 +49325,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -50572,13 +49634,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -50731,13 +49786,6 @@
             "name" : "dbf-default-precision",
             "sensitive" : false
           },
-          "record-writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-writer",
-            "sensitive" : false
-          },
           "sms" : {
             "displayName" : "sms",
             "dynamic" : true,
@@ -50750,13 +49798,6 @@
             "dynamic" : true,
             "identifiesControllerService" : false,
             "name" : "vas",
-            "sensitive" : false
-          },
-          "record-reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-reader",
             "sensitive" : false
           },
           "include-zero-record-flowfiles" : {
@@ -50838,6 +49879,13 @@
             "name" : "et-initial-listing-target",
             "sensitive" : false
           },
+          "Delimiter" : {
+            "displayName" : "Delimiter",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Delimiter",
+            "sensitive" : false
+          },
           "proxy-configuration-service" : {
             "displayName" : "Proxy Configuration Service",
             "dynamic" : false,
@@ -50880,48 +49928,6 @@
             "name" : "Prefix",
             "sensitive" : false
           },
-          "Signer Override" : {
-            "displayName" : "Signer Override",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Signer Override",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Use Versions" : {
-            "displayName" : "Use Versions",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Use Versions",
-            "sensitive" : false
-          },
-          "Requester Pays" : {
-            "displayName" : "Requester Pays",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Requester Pays",
-            "sensitive" : false
-          },
-          "Delimiter" : {
-            "displayName" : "Delimiter",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Delimiter",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Write Object Tags" : {
             "displayName" : "Write Object Tags",
             "dynamic" : false,
@@ -50954,6 +49960,13 @@
             "name" : "SSL Context Service",
             "sensitive" : false
           },
+          "Signer Override" : {
+            "displayName" : "Signer Override",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Signer Override",
+            "sensitive" : false
+          },
           "Bucket" : {
             "displayName" : "Bucket",
             "dynamic" : false,
@@ -50973,6 +49986,13 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Region",
+            "sensitive" : false
+          },
+          "Record Writer" : {
+            "displayName" : "Record Writer",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "Record Writer",
             "sensitive" : false
           },
           "Custom Signer Class Name" : {
@@ -51001,6 +50021,20 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Write User Metadata",
+            "sensitive" : false
+          },
+          "Use Versions" : {
+            "displayName" : "Use Versions",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Use Versions",
+            "sensitive" : false
+          },
+          "Requester Pays" : {
+            "displayName" : "Requester Pays",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Requester Pays",
             "sensitive" : false
           }
         },
@@ -51080,13 +50114,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -51136,13 +50163,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -51169,13 +50189,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -51859,13 +50872,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -51915,13 +50921,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -51948,13 +50947,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -52031,20 +51023,6 @@
             "dynamic" : true,
             "identifiesControllerService" : false,
             "name" : "records",
-            "sensitive" : false
-          },
-          "record-writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-writer",
-            "sensitive" : false
-          },
-          "record-reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-reader",
             "sensitive" : false
           },
           "include-zero-record-flowfiles" : {
@@ -53867,13 +52845,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -54305,13 +53276,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -54361,13 +53325,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -54394,13 +53351,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -54486,13 +53436,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
             "sensitive" : false
           },
           "Custom Signer Module Location" : {
@@ -54645,20 +53588,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Script Body",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
             "sensitive" : false
           },
           "Module Directory" : {
@@ -59382,13 +58311,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -59438,13 +58360,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -59471,13 +58386,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -59578,13 +58486,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -59634,13 +58535,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -59667,13 +58561,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -59911,13 +58798,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -60144,13 +59024,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -60359,13 +59232,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -60415,13 +59281,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -60448,13 +59307,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -60555,13 +59407,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -60611,13 +59456,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -60644,13 +59482,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -60736,20 +59567,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Script Body",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
             "sensitive" : false
           },
           "Module Directory" : {
@@ -62315,13 +61132,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -62371,13 +61181,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -62404,13 +61207,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -62957,20 +61753,6 @@
             "dynamic" : true,
             "identifiesControllerService" : false,
             "name" : "records",
-            "sensitive" : false
-          },
-          "record-writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-writer",
-            "sensitive" : false
-          },
-          "record-reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-reader",
             "sensitive" : false
           },
           "include-zero-record-flowfiles" : {
@@ -64579,13 +63361,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -64635,13 +63410,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -64668,13 +63436,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -66282,13 +65043,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -66994,13 +65748,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -67050,13 +65797,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -67083,13 +65823,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -67190,13 +65923,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -67246,13 +65972,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -67279,13 +65998,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -67386,13 +66098,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -67442,13 +66147,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -67475,13 +66173,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -67672,13 +66363,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
             "sensitive" : false
           },
           "Custom Signer Module Location" : {
@@ -67983,13 +66667,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -68163,13 +66840,6 @@
             "name" : "moSMS",
             "sensitive" : false
           },
-          "record-writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-writer",
-            "sensitive" : false
-          },
           "mtSMS" : {
             "displayName" : "mtSMS",
             "dynamic" : true,
@@ -68217,13 +66887,6 @@
             "dynamic" : true,
             "identifiesControllerService" : false,
             "name" : "transit",
-            "sensitive" : false
-          },
-          "record-reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-reader",
             "sensitive" : false
           },
           "moCall" : {
@@ -68317,13 +66980,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -68373,13 +67029,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -68406,13 +67055,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -68501,6 +67143,13 @@
             "name" : "et-initial-listing-target",
             "sensitive" : false
           },
+          "Delimiter" : {
+            "displayName" : "Delimiter",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Delimiter",
+            "sensitive" : false
+          },
           "proxy-configuration-service" : {
             "displayName" : "Proxy Configuration Service",
             "dynamic" : false,
@@ -68543,48 +67192,6 @@
             "name" : "Prefix",
             "sensitive" : false
           },
-          "Signer Override" : {
-            "displayName" : "Signer Override",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Signer Override",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Use Versions" : {
-            "displayName" : "Use Versions",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Use Versions",
-            "sensitive" : false
-          },
-          "Requester Pays" : {
-            "displayName" : "Requester Pays",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Requester Pays",
-            "sensitive" : false
-          },
-          "Delimiter" : {
-            "displayName" : "Delimiter",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Delimiter",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Write Object Tags" : {
             "displayName" : "Write Object Tags",
             "dynamic" : false,
@@ -68617,6 +67224,13 @@
             "name" : "SSL Context Service",
             "sensitive" : false
           },
+          "Signer Override" : {
+            "displayName" : "Signer Override",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Signer Override",
+            "sensitive" : false
+          },
           "Bucket" : {
             "displayName" : "Bucket",
             "dynamic" : false,
@@ -68636,6 +67250,13 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Region",
+            "sensitive" : false
+          },
+          "Record Writer" : {
+            "displayName" : "Record Writer",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "Record Writer",
             "sensitive" : false
           },
           "Custom Signer Class Name" : {
@@ -68664,6 +67285,20 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Write User Metadata",
+            "sensitive" : false
+          },
+          "Use Versions" : {
+            "displayName" : "Use Versions",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Use Versions",
+            "sensitive" : false
+          },
+          "Requester Pays" : {
+            "displayName" : "Requester Pays",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Requester Pays",
             "sensitive" : false
           }
         },
@@ -70883,13 +69518,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -71336,13 +69964,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -71634,13 +70255,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Custom Signer Module Location" : {
             "displayName" : "Custom Signer Module Location",
             "dynamic" : false,
@@ -71859,20 +70473,6 @@
             "name" : "records",
             "sensitive" : false
           },
-          "record-writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-writer",
-            "sensitive" : false
-          },
-          "record-reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-reader",
-            "sensitive" : false
-          },
           "include-zero-record-flowfiles" : {
             "displayName" : "Include Zero Record FlowFiles",
             "dynamic" : false,
@@ -71952,6 +70552,13 @@
             "name" : "et-initial-listing-target",
             "sensitive" : false
           },
+          "Delimiter" : {
+            "displayName" : "Delimiter",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Delimiter",
+            "sensitive" : false
+          },
           "proxy-configuration-service" : {
             "displayName" : "Proxy Configuration Service",
             "dynamic" : false,
@@ -71994,48 +70601,6 @@
             "name" : "Prefix",
             "sensitive" : false
           },
-          "Signer Override" : {
-            "displayName" : "Signer Override",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Signer Override",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Use Versions" : {
-            "displayName" : "Use Versions",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Use Versions",
-            "sensitive" : false
-          },
-          "Requester Pays" : {
-            "displayName" : "Requester Pays",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Requester Pays",
-            "sensitive" : false
-          },
-          "Delimiter" : {
-            "displayName" : "Delimiter",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Delimiter",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Write Object Tags" : {
             "displayName" : "Write Object Tags",
             "dynamic" : false,
@@ -72068,6 +70633,13 @@
             "name" : "SSL Context Service",
             "sensitive" : false
           },
+          "Signer Override" : {
+            "displayName" : "Signer Override",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Signer Override",
+            "sensitive" : false
+          },
           "Bucket" : {
             "displayName" : "Bucket",
             "dynamic" : false,
@@ -72087,6 +70659,13 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Region",
+            "sensitive" : false
+          },
+          "Record Writer" : {
+            "displayName" : "Record Writer",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "Record Writer",
             "sensitive" : false
           },
           "Custom Signer Class Name" : {
@@ -72115,6 +70694,20 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Write User Metadata",
+            "sensitive" : false
+          },
+          "Use Versions" : {
+            "displayName" : "Use Versions",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Use Versions",
+            "sensitive" : false
+          },
+          "Requester Pays" : {
+            "displayName" : "Requester Pays",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Requester Pays",
             "sensitive" : false
           }
         },
@@ -72857,13 +71450,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -72913,13 +71499,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -72946,13 +71525,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -73810,13 +72382,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -73866,13 +72431,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -73899,13 +72457,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -73991,20 +72542,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Script Body",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
             "sensitive" : false
           },
           "Module Directory" : {
@@ -74230,13 +72767,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
             "sensitive" : false
           },
           "Multipart Threshold" : {
@@ -75958,20 +74488,6 @@
             "name" : "Script Body",
             "sensitive" : false
           },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Module Directory" : {
             "displayName" : "Module Directory",
             "dynamic" : false,
@@ -76060,13 +74576,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -76116,13 +74625,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -76149,13 +74651,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -76549,13 +75044,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -76713,13 +75201,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
             "sensitive" : false
           },
           "Custom Signer Module Location" : {
@@ -77024,13 +75505,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -77191,6 +75665,13 @@
             "name" : "et-initial-listing-target",
             "sensitive" : false
           },
+          "Delimiter" : {
+            "displayName" : "Delimiter",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Delimiter",
+            "sensitive" : false
+          },
           "proxy-configuration-service" : {
             "displayName" : "Proxy Configuration Service",
             "dynamic" : false,
@@ -77233,48 +75714,6 @@
             "name" : "Prefix",
             "sensitive" : false
           },
-          "Signer Override" : {
-            "displayName" : "Signer Override",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Signer Override",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Use Versions" : {
-            "displayName" : "Use Versions",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Use Versions",
-            "sensitive" : false
-          },
-          "Requester Pays" : {
-            "displayName" : "Requester Pays",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Requester Pays",
-            "sensitive" : false
-          },
-          "Delimiter" : {
-            "displayName" : "Delimiter",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Delimiter",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Write Object Tags" : {
             "displayName" : "Write Object Tags",
             "dynamic" : false,
@@ -77307,6 +75746,13 @@
             "name" : "SSL Context Service",
             "sensitive" : false
           },
+          "Signer Override" : {
+            "displayName" : "Signer Override",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Signer Override",
+            "sensitive" : false
+          },
           "Bucket" : {
             "displayName" : "Bucket",
             "dynamic" : false,
@@ -77326,6 +75772,13 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Region",
+            "sensitive" : false
+          },
+          "Record Writer" : {
+            "displayName" : "Record Writer",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "Record Writer",
             "sensitive" : false
           },
           "Custom Signer Class Name" : {
@@ -77354,6 +75807,20 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Write User Metadata",
+            "sensitive" : false
+          },
+          "Use Versions" : {
+            "displayName" : "Use Versions",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Use Versions",
+            "sensitive" : false
+          },
+          "Requester Pays" : {
+            "displayName" : "Requester Pays",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Requester Pays",
             "sensitive" : false
           }
         },
@@ -78523,13 +76990,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -78579,13 +77039,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -78612,13 +77065,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -78695,20 +77141,6 @@
             "dynamic" : true,
             "identifiesControllerService" : false,
             "name" : "records",
-            "sensitive" : false
-          },
-          "record-writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-writer",
-            "sensitive" : false
-          },
-          "record-reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-reader",
             "sensitive" : false
           },
           "include-zero-record-flowfiles" : {
@@ -79203,13 +77635,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
             "sensitive" : false
           },
           "Multipart Threshold" : {
@@ -81701,6 +80126,13 @@
             "name" : "et-initial-listing-target",
             "sensitive" : false
           },
+          "Delimiter" : {
+            "displayName" : "Delimiter",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Delimiter",
+            "sensitive" : false
+          },
           "proxy-configuration-service" : {
             "displayName" : "Proxy Configuration Service",
             "dynamic" : false,
@@ -81743,48 +80175,6 @@
             "name" : "Prefix",
             "sensitive" : false
           },
-          "Signer Override" : {
-            "displayName" : "Signer Override",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Signer Override",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
-            "sensitive" : false
-          },
-          "Use Versions" : {
-            "displayName" : "Use Versions",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Use Versions",
-            "sensitive" : false
-          },
-          "Requester Pays" : {
-            "displayName" : "Requester Pays",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Requester Pays",
-            "sensitive" : false
-          },
-          "Delimiter" : {
-            "displayName" : "Delimiter",
-            "dynamic" : false,
-            "identifiesControllerService" : false,
-            "name" : "Delimiter",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Write Object Tags" : {
             "displayName" : "Write Object Tags",
             "dynamic" : false,
@@ -81817,6 +80207,13 @@
             "name" : "SSL Context Service",
             "sensitive" : false
           },
+          "Signer Override" : {
+            "displayName" : "Signer Override",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Signer Override",
+            "sensitive" : false
+          },
           "Bucket" : {
             "displayName" : "Bucket",
             "dynamic" : false,
@@ -81836,6 +80233,13 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Region",
+            "sensitive" : false
+          },
+          "Record Writer" : {
+            "displayName" : "Record Writer",
+            "dynamic" : false,
+            "identifiesControllerService" : true,
+            "name" : "Record Writer",
             "sensitive" : false
           },
           "Custom Signer Class Name" : {
@@ -81864,6 +80268,20 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Write User Metadata",
+            "sensitive" : false
+          },
+          "Use Versions" : {
+            "displayName" : "Use Versions",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Use Versions",
+            "sensitive" : false
+          },
+          "Requester Pays" : {
+            "displayName" : "Requester Pays",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Requester Pays",
             "sensitive" : false
           }
         },
@@ -81943,13 +80361,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -81999,13 +80410,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -82032,13 +80436,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -82956,13 +81353,6 @@
             "name" : "Kafka Key Attribute Encoding",
             "sensitive" : false
           },
-          "Record Reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Reader",
-            "sensitive" : false
-          },
           "Record Metadata Strategy" : {
             "displayName" : "Record Metadata Strategy",
             "dynamic" : false,
@@ -83012,13 +81402,6 @@
             "name" : "partition",
             "sensitive" : false
           },
-          "Kafka Connection Service" : {
-            "displayName" : "Kafka Connection Service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Kafka Connection Service",
-            "sensitive" : false
-          },
           "Publish Strategy" : {
             "displayName" : "Publish Strategy",
             "dynamic" : false,
@@ -83045,13 +81428,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "partitioner.class",
-            "sensitive" : false
-          },
-          "Record Writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "Record Writer",
             "sensitive" : false
           },
           "Transactions Enabled" : {
@@ -83128,20 +81504,6 @@
             "dynamic" : true,
             "identifiesControllerService" : false,
             "name" : "records",
-            "sensitive" : false
-          },
-          "record-writer" : {
-            "displayName" : "Record Writer",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-writer",
-            "sensitive" : false
-          },
-          "record-reader" : {
-            "displayName" : "Record Reader",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "record-reader",
             "sensitive" : false
           },
           "include-zero-record-flowfiles" : {
@@ -83888,13 +82250,6 @@
             "dynamic" : false,
             "identifiesControllerService" : false,
             "name" : "Object Key",
-            "sensitive" : false
-          },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
             "sensitive" : false
           },
           "Multipart Threshold" : {
@@ -84739,13 +83094,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -85055,13 +83403,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Multipart Threshold" : {
             "displayName" : "Multipart Threshold",
             "dynamic" : false,
@@ -85221,13 +83562,6 @@
             "name" : "Object Key",
             "sensitive" : false
           },
-          "AWS Credentials Provider service" : {
-            "displayName" : "AWS Credentials Provider service",
-            "dynamic" : false,
-            "identifiesControllerService" : true,
-            "name" : "AWS Credentials Provider service",
-            "sensitive" : false
-          },
           "Custom Signer Module Location" : {
             "displayName" : "Custom Signer Module Location",
             "dynamic" : false,
@@ -85330,6 +83664,218 @@
       "remoteProcessGroups" : [ ],
       "scheduledState" : "ENABLED",
       "statelessFlowTimeout" : "1 min"
+    }, {
+      "comments" : "",
+      "componentType" : "PROCESS_GROUP",
+      "connections" : [ {
+        "backPressureDataSizeThreshold" : "1 GB",
+        "backPressureObjectThreshold" : 10000,
+        "bends" : [ ],
+        "componentType" : "CONNECTION",
+        "destination" : {
+          "comments" : "",
+          "groupId" : "c862ca72-620a-31a9-8646-a12cb5e61ded",
+          "id" : "387d6841-891b-3976-af9a-33ef0a08df5c",
+          "name" : "UpdateAttribute",
+          "type" : "PROCESSOR"
+        },
+        "flowFileExpiration" : "0 sec",
+        "groupIdentifier" : "c862ca72-620a-31a9-8646-a12cb5e61ded",
+        "identifier" : "2e3f1b35-05e5-3007-a17e-6d12f5749e1d",
+        "labelIndex" : 0,
+        "loadBalanceCompression" : "DO_NOT_COMPRESS",
+        "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+        "name" : "",
+        "partitioningAttribute" : "",
+        "prioritizers" : [ ],
+        "selectedRelationships" : [ "success" ],
+        "source" : {
+          "comments" : "",
+          "groupId" : "c862ca72-620a-31a9-8646-a12cb5e61ded",
+          "id" : "1d287396-459c-383a-aeb5-a5c3e303750e",
+          "name" : "GenerateFlowFile",
+          "type" : "PROCESSOR"
+        },
+        "zIndex" : 1
+      } ],
+      "controllerServices" : [ ],
+      "defaultBackPressureDataSizeThreshold" : "1 GB",
+      "defaultBackPressureObjectThreshold" : 10000,
+      "defaultFlowFileExpiration" : "0 sec",
+      "executionEngine" : "INHERITED",
+      "flowFileConcurrency" : "UNBOUNDED",
+      "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+      "funnels" : [ ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c862ca72-620a-31a9-8646-a12cb5e61ded",
+      "inputPorts" : [ ],
+      "labels" : [ ],
+      "maxConcurrentTasks" : 1,
+      "name" : "New Program",
+      "outputPorts" : [ ],
+      "position" : {
+        "x" : 2006.6206896551723,
+        "y" : 1413.5172413793102
+      },
+      "processGroups" : [ ],
+      "processors" : [ {
+        "autoTerminatedRelationships" : [ ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-standard-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "c862ca72-620a-31a9-8646-a12cb5e61ded",
+        "identifier" : "1d287396-459c-383a-aeb5-a5c3e303750e",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "GenerateFlowFile",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : -312.0,
+          "y" : -240.0
+        },
+        "properties" : {
+          "character-set" : "UTF-8",
+          "File Size" : "0B",
+          "Batch Size" : "1",
+          "Unique FlowFiles" : "false",
+          "Data Format" : "Text"
+        },
+        "propertyDescriptors" : {
+          "character-set" : {
+            "displayName" : "Character Set",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "character-set",
+            "sensitive" : false
+          },
+          "File Size" : {
+            "displayName" : "File Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "File Size",
+            "sensitive" : false
+          },
+          "mime-type" : {
+            "displayName" : "Mime Type",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "mime-type",
+            "sensitive" : false
+          },
+          "generate-ff-custom-text" : {
+            "displayName" : "Custom Text",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "generate-ff-custom-text",
+            "sensitive" : false
+          },
+          "Batch Size" : {
+            "displayName" : "Batch Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Batch Size",
+            "sensitive" : false
+          },
+          "Unique FlowFiles" : {
+            "displayName" : "Unique FlowFiles",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Unique FlowFiles",
+            "sensitive" : false
+          },
+          "Data Format" : {
+            "displayName" : "Data Format",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Data Format",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 0,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "1 min",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+        "yieldDuration" : "1 sec"
+      }, {
+        "autoTerminatedRelationships" : [ "success" ],
+        "backoffMechanism" : "PENALIZE_FLOWFILE",
+        "bulletinLevel" : "WARN",
+        "bundle" : {
+          "artifact" : "nifi-update-attribute-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.6.0"
+        },
+        "comments" : "",
+        "componentType" : "PROCESSOR",
+        "concurrentlySchedulableTaskCount" : 1,
+        "executionNode" : "ALL",
+        "groupIdentifier" : "c862ca72-620a-31a9-8646-a12cb5e61ded",
+        "identifier" : "387d6841-891b-3976-af9a-33ef0a08df5c",
+        "maxBackoffPeriod" : "10 mins",
+        "name" : "UpdateAttribute",
+        "penaltyDuration" : "30 sec",
+        "position" : {
+          "x" : -56.0,
+          "y" : -8.0
+        },
+        "properties" : {
+          "Store State" : "Do not store state",
+          "canonical-value-lookup-cache-size" : "100"
+        },
+        "propertyDescriptors" : {
+          "Delete Attributes Expression" : {
+            "displayName" : "Delete Attributes Expression",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Delete Attributes Expression",
+            "sensitive" : false
+          },
+          "Store State" : {
+            "displayName" : "Store State",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Store State",
+            "sensitive" : false
+          },
+          "canonical-value-lookup-cache-size" : {
+            "displayName" : "Cache Value Lookup Cache Size",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "canonical-value-lookup-cache-size",
+            "sensitive" : false
+          },
+          "Stateful Variables Initial Value" : {
+            "displayName" : "Stateful Variables Initial Value",
+            "dynamic" : false,
+            "identifiesControllerService" : false,
+            "name" : "Stateful Variables Initial Value",
+            "sensitive" : false
+          }
+        },
+        "retriedRelationships" : [ ],
+        "retryCount" : 10,
+        "runDurationMillis" : 25,
+        "scheduledState" : "ENABLED",
+        "schedulingPeriod" : "0 sec",
+        "schedulingStrategy" : "TIMER_DRIVEN",
+        "style" : { },
+        "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+        "yieldDuration" : "1 sec"
+      } ],
+      "remoteProcessGroups" : [ ],
+      "scheduledState" : "ENABLED",
+      "statelessFlowTimeout" : "1 min"
     } ],
     "processors" : [ ],
     "remoteProcessGroups" : [ ],
@@ -85343,6 +83889,6 @@
   "snapshotMetadata" : {
     "author" : "admin",
     "flowIdentifier" : "Vodacom",
-    "timestamp" : 1772007670835
+    "timestamp" : 1772008938441
   }
 }
